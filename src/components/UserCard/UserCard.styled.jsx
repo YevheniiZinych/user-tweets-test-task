@@ -1,8 +1,14 @@
 import styled from 'styled-components';
 
+export const CardWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+`;
+
 export const CardContainer = styled.div`
   position: relative;
-  display: block;
   width: 380px;
   height: 460px;
   background: linear-gradient(
@@ -13,6 +19,8 @@ export const CardContainer = styled.div`
   );
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
   border-radius: 20px;
+
+  margin-top: 50px;
 `;
 
 export const TextWrapper = styled.div`
@@ -55,8 +63,16 @@ export const AvatarFrame = styled.img`
   left: 50%;
   transform: translate(-50%, -40%);
   z-index: 1;
-  /* background-position: center;
-  background-repeat: no-repeat; */
+`;
+
+export const UserImg = styled.img`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -43%);
+  z-index: 1;
+  height: 62px;
+  border-radius: 50%;
 `;
 
 export const LineLeft = styled.div`
